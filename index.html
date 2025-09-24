@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Sustainability Systems</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f8f9fa;}
+    header {background: #0b3d91; color: white; padding: 20px 0; text-align: center;}
+    header h1 {margin: 0; font-size: 2rem;}
+    header p {margin: 5px 0;}
+    nav {background: #062a63; padding: 10px; text-align: center;}
+    nav a {color: white; text-decoration: none; margin: 0 15px; font-weight: bold;}
+    nav a:hover {text-decoration: underline;}
+    section {padding: 40px 20px; max-width: 1000px; margin: auto;}
+    h2 {color: #0b3d91; margin-bottom: 20px;}
+    ul {list-style-type: none; padding: 0;}
+    ul li {padding: 5px 0;}
+    .services, .industries {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;}
+    .card {background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    footer {background: #062a63; color: white; text-align: center; padding: 20px; margin-top: 20px;}
+    footer p {margin: 5px;}
+    .contact {text-align: center;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Global Sustainability Systems</h1>
+  <p>25+ Years of Excellence in Social, Safety, Security & Technical Audits</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#industries">Industries</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Global Sustainability Systems (GSS) has been a trusted compliance consulting and auditing partner since 1999. 
+     With over 25 years of experience and 400+ clients served across India, we specialize in social, safety, technical, and statutory audits to help industries achieve global standards in compliance and sustainability.</p>
+</section>
+
+<section id="services">
+  <h2>Services Offered</h2>
+  <div class="services">
+    <div class="card"><h3>Compliance Consulting</h3><p>Social, safety, technical, and statutory compliance across industries.</p></div>
+    <div class="card"><h3>Audit Services</h3><p>Consultancy for SA 8000, BSCI, SEDEX (SMETA), WRAP, C-TPAT, SASO, GAP, RBA, SLCP, HIGG FEM, ICS Audit, GMP, GOTS, GRS, RCS, ISO 9001, ISO 14001, ECOVADIS.</p></div>
+    <div class="card"><h3>Safety Audits</h3><p>Workplace safety assessments as per Factory Act & legal standards.</p></div>
+    <div class="card"><h3>Training & Awareness</h3><p>Programs to educate workers & management on compliance and safety.</p></div>
+  </div>
+</section>
+
+<section id="industries">
+  <h2>Industries Served</h2>
+  <div class="industries">
+    <div class="card"><p>Kitchenware</p></div>
+    <div class="card"><p>Handicrafts (Metal & Wood)</p></div>
+    <div class="card"><p>Oil & Gas</p></div>
+    <div class="card"><p>Diamond & Gold</p></div>
+    <div class="card"><p>Pharmaceutical</p></div>
+    <div class="card"><p>Paper Mill</p></div>
+    <div class="card"><p>Toys</p></div>
+    <div class="card"><p>Candle Making</p></div>
+    <div class="card"><p>Perfumery</p></div>
+    <div class="card"><p>Soap & Shower Gel</p></div>
+    <div class="card"><p>Jewellery</p></div>
+    <div class="card"><p>Readymade Garments</p></div>
+    <div class="card"><p>Home Textiles</p></div>
+    <div class="card"><p>Leather</p></div>
+    <div class="card"><p>Packaging</p></div>
+    <div class="card"><p>Seafood</p></div>
+    <div class="card"><p>Food Processing</p></div>
+    <div class="card"><p>Ball Pen</p></div>
+    <div class="card"><p>Fabrication</p></div>
+    <div class="card"><p>Chemicals</p></div>
+    <div class="card"><p>Industrial Pipes</p></div>
+    <div class="card"><p>Cosmetics</p></div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Key Achievements</h2>
+  <ul>
+    <li>✅ Successfully served over 400 clients across India.</li>
+    <li>✅ Helped numerous factories and warehouses achieve statutory compliance.</li>
+    <li>✅ Enhanced workplace safety and improved management-labor relations.</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Mumbai Branch:</strong> E-2, Ramesh Estate, Sheetal Nagar, Andheri (E), Mumbai - 84</p>
+  <p><strong>Noida Branch:</strong> H-174, Sec-45, Noida - 201301, UP</p>
+  <p><strong>Kolkata Branch:</strong> 201, Block K3/3, Belvedere, Phase 3, Raghunathpur, Kolkata - 59</p>
+  <p><strong>Mobile:</strong> 9820107123 / 9820142916</p>
+  <p><strong>Email:</strong> gsscompliance24@gmail.com | hr.gss24@gmail.com</p>
+  <p><a href="http://www.jsdl.in/DT-43BN57A2KN-" target="_blank">Just Dial Profile</a></p>
+</section>
+
+<footer>
+  <p>© 1999 - 2025 Global Sustainability Systems | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+Step 1: Install Ionic CLI
+
+npm install -g @ionic/cli
+
+Step 2: Create an Ionic Project
+
+ionic start visitor-management-app blank --type=angular
+cd visitor-management-app
+
+Step 3: Install Dependencies
+You’ll need a few additional libraries for handling images and generating reports.
+
+npm install file-saver jspdf @ionic-native/camera @awesome-cordova-plugins/file
+
+Step 4: Create the Visitor Form
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Visitor Management</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="visitorForm" (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Address</ion-label>
+      <ion-input formControlName="address" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Contact Number</ion-label>
+      <ion-input formControlName="contactNumber" type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Purpose of Visit</ion-label>
+      <ion-input formControlName="purpose" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Factory</ion-label>
+      <ion-input formControlName="factory" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Visitor Picture</ion-label>
+      <ion-button (click)="takePicture()">Take Picture</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ID Card (Front)</ion-label>
+      <ion-button (click)="uploadIDFront()">Upload ID Front</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ID Card (Back)</ion-label>
+      <ion-button (click)="uploadIDBack()">Upload ID Back</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Vehicle Information</ion-label>
+      <ion-input formControlName="vehicleInfo" type="text"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Submit</ion-button>
+  </form>
+</ion-content>
+
+
+Step 5: Handling the Form Logic in the Controller
+In src/app/pages/home/home.page.ts, write the logic for form submission, taking pictures, and uploading ID cards.
+
+
+
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
+import { File } from '@awesome-cordova-plugins/file/ngx';
+import { jsPDF } from 'jspdf';
+import * as FileSaver from 'file-saver';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+export class HomePage {
+  visitorForm: FormGroup;
+  visitorPicture: string = '';
+  idFront: string = '';
+  idBack: string = '';
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private camera: Camera,
+    private file: File
+  ) {
+    this.visitorForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      address: ['', Validators.required],
+      contactNumber: ['', Validators.required],
+      purpose: ['', Validators.required],
+      factory: ['', Validators.required],
+      vehicleInfo: [''],
+    });
+  }
+
+  // Function to take a picture of the visitor
+  takePicture() {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    };
+
+    this.camera.getPicture(options).then((imageData) => {
+      this.visitorPicture = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      console.log('Error taking picture', err);
+    });
+  }
+
+  // Function to upload ID Front
+  uploadIDFront() {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    };
+
+    this.camera.getPicture(options).then((imageData) => {
+      this.idFront = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      console.log('Error taking picture', err);
+    });
+  }
+
+  // Function to upload ID Back
+  uploadIDBack() {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    };
+
+    this.camera.getPicture(options).then((imageData) => {
+      this.idBack = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      console.log('Error taking picture', err);
+    });
+  }
+
+  // Function to submit the form
+  submitForm() {
+    if (this.visitorForm.valid) {
+      console.log(this.visitorForm.value);
+      // You can now send this data to a server or save it locally
+      this.generatePDF();
+    }
+  }
+
+  // Function to generate PDF report
+  generatePDF() {
+    const doc = new jsPDF();
+    doc.text('Visitor Report', 10, 10);
+    doc.text('Name: ' + this.visitorForm.get('name').value, 10, 20);
+    doc.text('Address: ' + this.visitorForm.get('address').value, 10, 30);
+    doc.text('Contact Number: ' + this.visitorForm.get('contactNumber').value, 10, 40);
+    doc.text('Purpose of Visit: ' + this.visitorForm.get('purpose').value, 10, 50);
+
+    if (this.visitorPicture) {
+      doc.addImage(this.visitorPicture, 'JPEG', 10, 60, 50, 50);
+    }
+
+    doc.save('visitor-report.pdf');
+  }
+}
+
+
+
+Step 6: Add Camera and File Plugins
+You need to add the required plugins for camera and file access to work properly on mobile devices.
+
+Install Camera Plugin:
+
+Step 6: Add Camera and File Plugins
+You need to add the required plugins for camera and file access to work properly on mobile devices.
+
+Install Camera Plugin:
+
+ionic cordova plugin add cordova-plugin-camera
+npm install @ionic-native/camera
+
+
+Install File Plugin:
+
+ionic cordova plugin add cordova-plugin-file
+npm install @ionic-native/file
+
+
+
+ionic cordova platform add android
+ionic cordova run android
