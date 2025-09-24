@@ -5,66 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Sustainability Systems</title>
   <style>
-    /* Colors & Fonts */
     :root {
-      --primary: #5a2ca0; /* Purple */
-      --secondary: #0b3d91; /* Dark Blue */
-      --light: #ffffff;
-      --dark: #1a1a1a;
+      --purple: #5a2ca0;
+      --light-purple: #7e57c2;
+      --blue: #3949ab;
+      --white: #ffffff;
+      --grey: #f5f5f5;
     }
     body {
       margin: 0; font-family: 'Segoe UI', sans-serif;
-      background: var(--light); color: var(--dark);
+      background: var(--white); color: var(--blue);
     }
     header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: var(--light); text-align: center; padding: 50px 20px;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      color: var(--white); text-align: center; padding: 60px 20px;
     }
     header img {
       max-width: 120px; margin-bottom: 15px;
-      animation: fadeInDown 1s ease;
     }
-    header h1 {
-      margin: 0; font-size: 2.5rem; letter-spacing: 1px;
-      animation: fadeInUp 1s ease;
-    }
+    header h1 { margin: 0; font-size: 2.8rem; }
     header p { font-size: 1.2rem; margin-top: 10px; }
+
     nav {
-      background: var(--dark); padding: 12px; text-align: center;
+      background: var(--purple); padding: 15px; text-align: center;
       position: sticky; top: 0; z-index: 1000;
     }
     nav a {
-      color: var(--light); text-decoration: none; margin: 0 15px; font-weight: 500;
-      transition: color 0.3s;
+      color: var(--white); text-decoration: none; margin: 0 15px;
+      font-weight: 500; transition: color 0.3s;
     }
-    nav a:hover { color: var(--primary); }
+    nav a:hover { color: var(--grey); }
 
-    section {
-      padding: 60px 20px; max-width: 1100px; margin: auto;
-      animation: fadeIn 1.2s ease;
-    }
-    h2 {
-      text-align: center; color: var(--primary);
-      margin-bottom: 30px; font-size: 2rem;
-    }
-    .grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { text-align: center; color: var(--purple); margin-bottom: 30px; font-size: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
     .card {
-      background: var(--light); border-radius: 12px; padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s;
+      background: var(--grey); border-radius: 12px; padding: 20px;
+      box-shadow: 0 4px 10px rgba(90,44,160,0.2);
+      transition: transform 0.3s, background 0.3s;
     }
-    .card:hover { transform: translateY(-5px); }
+    .card:hover { transform: translateY(-5px); background: var(--light-purple); color: var(--white); }
+
+    .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; text-align: center; }
+    .logo-grid img { max-width: 100px; filter: grayscale(100%); transition: 0.3s; }
+    .logo-grid img:hover { filter: grayscale(0%); transform: scale(1.05); }
 
     footer {
-      background: var(--secondary); color: var(--light); text-align: center; padding: 20px;
+      background: var(--purple); color: var(--white); text-align: center; padding: 20px;
     }
-
-    /* Animations */
-    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
-    @keyframes fadeInUp { from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);} }
-    @keyframes fadeInDown { from {opacity: 0; transform: translateY(-30px);} to {opacity: 1; transform: translateY(0);} }
   </style>
 </head>
 <body>
@@ -76,50 +64,77 @@
 </header>
 
 <nav>
-  <a href="#about">About</a>
+  <a href="#overview">Overview</a>
   <a href="#services">Services</a>
+  <a href="#agencies">Audit Agencies</a>
+  <a href="#clients">Clients</a>
   <a href="#industries">Industries</a>
   <a href="#approach">Approach</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>Global Sustainability Systems (GSS) has been a trusted compliance consulting and auditing partner for over 25 years. With 400+ clients nationwide, we specialize in social, safety, technical, and statutory audits, empowering businesses to meet international compliance standards while ensuring workplace safety and ethical practices.</p>
+<section id="overview">
+  <h2>Overview</h2>
+  <p><strong>Global Sustainability Systems (GSS)</strong> has been a trusted compliance partner for over 25 years. With 400+ clients served across India, we specialize in Social, Safety, Security & Technical Audits, and Compliance Consulting.  
+  <br><br><strong>Mission:</strong> To ensure factories and warehouses comply with the Factory Act & regulations, promote workplace safety, and raise awareness among laborers & management.</p>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
+  <h2>Services Offered</h2>
   <div class="grid">
-    <div class="card"><h3>Compliance Consulting</h3><p>Advising industries on social, safety, technical, and statutory compliance.</p></div>
-    <div class="card"><h3>Audit Services</h3><p>SA 8000, BSCI, SEDEX (SMETA), WRAP, C-TPAT, SASO, GAP, RBA, SLCP, HIGG FEM, GMP, GOTS, GRS, ISO 9001, ISO 14001, ECOVADIS and more.</p></div>
-    <div class="card"><h3>Safety Audits</h3><p>Ensuring workplace safety compliance with Factory Act and relevant laws.</p></div>
-    <div class="card"><h3>Training Programs</h3><p>Building awareness among management & labor to foster safe, compliant environments.</p></div>
+    <div class="card"><h3>Compliance Consulting</h3><p>Expert guidance for social, safety, technical & statutory compliance.</p></div>
+    <div class="card"><h3>Audit Services</h3><p>SA 8000, BSCI, SEDEX (SMETA), WRAP, C-TPAT, SASO, GAP, RBA, SLCP, HIGG FEM, ICS, GMP, GOTS, GRS, RCS, ISO 9001, ISO 14001, ECOVADIS.</p></div>
+    <div class="card"><h3>Safety Audits</h3><p>Workplace safety evaluation in line with legal standards.</p></div>
+    <div class="card"><h3>Training</h3><p>Awareness programs for labor & management to improve compliance culture.</p></div>
+    <div class="card"><h3>Other Services</h3><p>Safety Signages, Fire System Installation, Payroll Outsourcing, Contract Management.</p></div>
+  </div>
+</section>
+
+<section id="agencies">
+  <h2>Audit Agencies We Collaborate With</h2>
+  <div class="logo-grid">
+    <img src="intertek.png" alt="Intertek">
+    <img src="sgs.png" alt="SGS">
+    <img src="bv.png" alt="Bureau Veritas">
+    <img src="tuv.png" alt="TUV">
+    <img src="bsi.png" alt="BSI">
+    <img src="qima.png" alt="QIMA">
+  </div>
+</section>
+
+<section id="clients">
+  <h2>Our Valued Clients</h2>
+  <p style="text-align:center">We proudly serve over 400 clients across diverse industries.</p>
+  <div class="logo-grid">
+    <img src="client1.png" alt="Client 1">
+    <img src="client2.png" alt="Client 2">
+    <img src="client3.png" alt="Client 3">
+    <img src="client4.png" alt="Client 4">
   </div>
 </section>
 
 <section id="industries">
   <h2>Industries We Serve</h2>
   <div class="grid">
-    <div class="card"><p>Kitchenware</p></div>
-    <div class="card"><p>Handicrafts</p></div>
-    <div class="card"><p>Oil & Gas</p></div>
-    <div class="card"><p>Pharmaceutical</p></div>
-    <div class="card"><p>Garments & Textiles</p></div>
-    <div class="card"><p>Leather</p></div>
-    <div class="card"><p>Food Processing</p></div>
-    <div class="card"><p>Chemicals</p></div>
-    <div class="card"><p>Jewellery</p></div>
-    <div class="card"><p>Cosmetics</p></div>
+    <div class="card">Kitchenware</div>
+    <div class="card">Handicrafts</div>
+    <div class="card">Oil & Gas</div>
+    <div class="card">Pharmaceutical</div>
+    <div class="card">Garments & Textiles</div>
+    <div class="card">Leather</div>
+    <div class="card">Food Processing</div>
+    <div class="card">Chemicals</div>
+    <div class="card">Jewellery</div>
+    <div class="card">Cosmetics</div>
   </div>
 </section>
 
 <section id="approach">
   <h2>Our Approach</h2>
   <ul>
-    <li>✔ Comprehensive audits to identify compliance gaps.</li>
-    <li>✔ Tailored solutions for unique client needs.</li>
-    <li>✔ Ongoing guidance for sustained compliance & safety.</li>
+    <li>✔ Comprehensive audits to identify compliance gaps</li>
+    <li>✔ Tailored solutions for client-specific needs</li>
+    <li>✔ Continuous support for long-term compliance</li>
   </ul>
 </section>
 
