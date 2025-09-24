@@ -15,9 +15,11 @@
       background: var(--white); color: var(--blue);
     }
     header {
-      background: linear-gradient(182deg, var(--purple), var(--blue));
-      color: var(--white); text-align: center; padding: 60px 20px;
-    }
+  background: linear-gradient(180deg, #d6a4f7, #4b0082); /* soft top to deep bottom */
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
     header img {
       max-width: 120px; margin-bottom: 15px;
     }
@@ -44,9 +46,22 @@
     }
     .card:hover { transform: translateY(-5px); background: var(--light-purple); color: var(--white); }
 
-    .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; text-align: center; }
-    .logo-grid img { max-width: 100px; filter: grayscale(100%); transition: 0.3s; }
-    .logo-grid img:hover { filter: grayscale(0%); transform: scale(1.05); }
+    .logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.logo-grid img {
+  max-width: 100px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.logo-grid img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
 
     footer {
       background: var(--purple); color: var(--white); text-align: center; padding: 20px;
@@ -91,6 +106,7 @@
 <section id="agencies">
   <h2>Audit Agencies We Collaborate With</h2>
   <div class="logo-grid">
+    <img src="urs.png" alt="urs">
     <img src="intertek.png" alt="Intertek">
     <img src="sgs.png" alt="SGS">
     <img src="bv.png" alt="Bureau Veritas">
@@ -108,8 +124,13 @@
     <img src="client2.png" alt="Client 2">
     <img src="client3.png" alt="Client 3">
     <img src="client4.png" alt="Client 4">
+    <img src="client5.png" alt="Client 5">
+    <img src="client6.png" alt="Client 6">
+    <img src="client7.png" alt="Client 7">
+    <img src="client8.png" alt="Client 8">
   </div>
 </section>
+
 
 <section id="industries">
   <h2>Industries We Serve</h2>
@@ -154,4 +175,5 @@
 
 
 </body></html>
+
 
